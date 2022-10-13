@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: #fff;
+}
+
+.container {
+    background: url(../img/bg-desktop.svg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.principal {
+    padding: 55px 70px;
+}
+
+.logo img {
+    width: 210px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 58% 1fr;
+    margin-top: 30px;
+}
+
+.content .mockup {
+    width: 90%;
+}
+
+.content .register {
+    padding-top: 42px;
+    margin-left: 10px;
+}
+
+.register h3,
+.register button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.content .register h3{
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.register p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75rem;
+    margin-top: 23px;
+    margin-right: 25px;
+    line-height: 2.5rem;
+}
+
+.register button {
+    margin-top: 30px;
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    color: var(--bg-principal);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.register button:hover {
+    color: #fff;
+    background-color: var(--color-hover);
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+}
+
+.social svg {
+    border: 1px solid #fff;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: -7px;
+    margin-left: 14px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.social svg:hover {
+    color: var(--color-hover);
+    border: 1px solid var(--color-hover);
+}
+
+@media(max-width: 425px) {
+    .container {
+        background: url(../img/bg-mobile.svg) top center no-repeat;
+    }
+
+    .principal {
+        padding: 30px;
+    }
+    
+    .logo img {
+        width: 150px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .content .register {
+        padding-top: 20px;
+    }
+
+    .content .register h3 {
+        font-size: 3rem;
+    }
+
+    .register p {
+        margin-top: 10px;
+    }
+
+    .register button {
+        width: 250px;
+        height: 45px;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+}
